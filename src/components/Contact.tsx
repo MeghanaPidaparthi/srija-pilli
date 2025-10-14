@@ -29,98 +29,98 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-background relative">
+      <div className="absolute top-10 right-10 text-5xl animate-bounce">💌</div>
+      
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in">
-          Get In Touch
-        </h2>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="animate-slide-up">
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">Let's Connect</h3>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm always open to discussing new opportunities, projects, or just connecting with fellow developers. Feel free to reach out through any of these channels:
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+              Let's start building your project
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Want to see how to transform your ideas into AI solutions? Send me a message 🚀
             </p>
-            <div className="space-y-4">
-              <a
-                href="mailto:srijapilli@example.com"
-                className="flex items-center gap-4 p-4 bg-card rounded-2xl hover:shadow-[var(--shadow-card)] transition-all duration-300 group"
-              >
-                <div className="p-3 rounded-xl bg-gradient-to-r from-primary to-accent">
-                  <Mail className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">Email</p>
-                  <p className="text-sm text-muted-foreground">srijapilli@example.com</p>
-                </div>
-              </a>
-              <a
-                href="https://linkedin.com/in/srijapilli"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-card rounded-2xl hover:shadow-[var(--shadow-card)] transition-all duration-300 group"
-              >
-                <div className="p-3 rounded-xl bg-gradient-to-r from-accent to-primary">
-                  <Linkedin className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">LinkedIn</p>
-                  <p className="text-sm text-muted-foreground">Connect with me</p>
-                </div>
-              </a>
-              <a
-                href="https://github.com/srijapilli"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-card rounded-2xl hover:shadow-[var(--shadow-card)] transition-all duration-300 group"
-              >
-                <div className="p-3 rounded-xl bg-gradient-to-r from-primary to-accent">
-                  <Github className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">GitHub</p>
-                  <p className="text-sm text-muted-foreground">View my code</p>
-                </div>
-              </a>
-            </div>
           </div>
-          <div className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          
+          <div className="bg-card rounded-3xl p-8 md:p-12 border-4 border-foreground shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] animate-slide-up">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Input
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="rounded-2xl"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-bold mb-2">Name</label>
+                  <Input
+                    name="name"
+                    id="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-2xl bg-background border-2 border-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all font-medium"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-bold mb-2">Email</label>
+                  <Input
+                    name="email"
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-2xl bg-background border-2 border-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all font-medium"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
               </div>
               <div>
-                <Input
-                  name="email"
-                  type="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="rounded-2xl"
-                />
-              </div>
-              <div>
+                <label htmlFor="message" className="block text-sm font-bold mb-2">Message</label>
                 <Textarea
                   name="message"
-                  placeholder="Your Message"
+                  id="message"
+                  rows={5}
                   value={formData.message}
                   onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-2xl bg-background border-2 border-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none font-medium"
+                  placeholder="Tell me about your project..."
                   required
-                  rows={5}
-                  className="rounded-2xl"
                 />
               </div>
-              <Button type="submit" variant="hero" size="lg" className="w-full">
-                Send Message
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90 border-2 border-foreground font-bold text-lg py-6"
+              >
+                Send us message
               </Button>
             </form>
+            
+            <div className="mt-12 pt-8 border-t-2 border-foreground">
+              <h3 className="text-xl font-bold mb-6 text-center">Connect with me 🤝</h3>
+              <div className="flex justify-center gap-4">
+                <a 
+                  href="https://linkedin.com/in/yourprofile" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-4 rounded-full border-2 border-foreground bg-background hover:bg-foreground hover:text-background transition-all"
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a>
+                <a 
+                  href="https://github.com/yourprofile" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-4 rounded-full border-2 border-foreground bg-background hover:bg-foreground hover:text-background transition-all"
+                >
+                  <Github className="h-6 w-6" />
+                </a>
+                <a 
+                  href="mailto:your.email@example.com" 
+                  className="p-4 rounded-full border-2 border-foreground bg-background hover:bg-foreground hover:text-background transition-all"
+                >
+                  <Mail className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -4,70 +4,78 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "Built using HTML, CSS, and JavaScript to showcase my learning journey and work. Features responsive design and smooth animations.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      gradient: "from-primary to-accent"
+      title: "Sentiment Analysis Model",
+      description: "NLP model that classifies text sentiment using BERT transformers. Achieved 94% accuracy on test dataset.",
+      technologies: ["Python", "BERT", "Transformers"],
+      emoji: "😊"
     },
     {
-      title: "To-Do List App",
-      description: "A simple task manager with add/delete features and interactive UI. Helps users organize their daily tasks efficiently.",
-      technologies: ["React", "CSS"],
-      gradient: "from-accent to-primary"
+      title: "Image Classification CNN",
+      description: "Deep learning model for multi-class image classification using convolutional neural networks on CIFAR-10 dataset.",
+      technologies: ["TensorFlow", "CNN", "Keras"],
+      emoji: "🖼️"
     },
     {
-      title: "Weather Finder App",
-      description: "Fetches real-time weather data using OpenWeather API. Displays current conditions and forecasts with a clean interface.",
-      technologies: ["JavaScript", "API", "CSS"],
-      gradient: "from-primary to-accent"
+      title: "Predictive Analytics Dashboard",
+      description: "ML-powered dashboard for sales forecasting using time series analysis and regression models.",
+      technologies: ["Python", "Scikit-learn", "Streamlit"],
+      emoji: "📈"
     },
     {
-      title: "Study AI",
-      description: "An AI-based app for creating instant notes and summaries. Leverages AI tools to help students study more efficiently.",
-      technologies: ["React", "AI", "Node.js"],
-      gradient: "from-accent to-primary"
+      title: "Recommendation System",
+      description: "Collaborative filtering-based recommendation engine for personalized content suggestions.",
+      technologies: ["Python", "Pandas", "Matrix Factorization"],
+      emoji: "🎯"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-secondary/30">
+    <section id="projects" className="py-20 bg-background relative">
+      <div className="absolute top-10 right-10 text-5xl">🎯</div>
+      <div className="absolute bottom-10 left-10 text-4xl">💫</div>
+      
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in">
-          Featured Projects
-        </h2>
+        <div className="flex items-center justify-center gap-3 mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in relative">
+            My Portfolio
+            <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 300 8" fill="none">
+              <path d="M2 6C50 3 100 2 150 4C200 6 250 2 298 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary"/>
+            </svg>
+          </h2>
+          <span className="text-4xl">🚀</span>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-card rounded-3xl p-8 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 hover:scale-105 animate-slide-up group"
+              className="bg-card rounded-3xl p-8 border-4 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-300 animate-slide-up group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`h-2 w-16 rounded-full bg-gradient-to-r ${project.gradient} mb-6`} />
-              <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
+              <div className="flex items-start justify-between mb-4">
+                <div className="w-12 h-12 rounded-2xl bg-secondary border-2 border-foreground flex items-center justify-center text-2xl">
+                  {project.emoji}
+                </div>
+                <Button variant="ghost" size="icon" className="rounded-full border-2 border-foreground hover:bg-foreground hover:text-background">
+                  <ExternalLink className="h-4 w-4" />
+                </Button>
+              </div>
+              
+              <h3 className="text-2xl font-bold mb-3 text-foreground">
                 {project.title}
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-foreground/80 mb-6 leading-relaxed">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium"
+                    className="px-3 py-1 bg-background border-2 border-foreground rounded-full text-xs font-semibold"
                   >
                     {tech}
                   </span>
                 ))}
-              </div>
-              <div className="flex gap-4">
-                <Button variant="outline" size="sm" className="group/btn">
-                  <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                  View Demo
-                </Button>
-                <Button variant="ghost" size="sm" className="group/btn">
-                  <Github className="h-4 w-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
-                  Code
-                </Button>
               </div>
             </div>
           ))}
