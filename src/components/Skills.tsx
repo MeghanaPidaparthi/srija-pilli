@@ -3,31 +3,31 @@ import { Brain, Code2, Database, Cpu } from "lucide-react";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Machine Learning",
-      icon: Brain,
-      skills: ["Scikit-learn", "TensorFlow", "PyTorch", "Keras", "XGBoost"],
-      emoji: "🤖",
+      title: "Web Development",
+      icon: Code2,
+      skills: ["HTML", "CSS", "React", "Next.js", "Tailwind CSS", "Responsive Design"],
+      emoji: "💻",
       color: "bg-primary"
     },
     {
-      title: "Deep Learning",
-      icon: Cpu,
-      skills: ["CNN", "RNN", "LSTM", "Transformers", "GANs"],
+      title: "Programming",
+      icon: Brain,
+      skills: ["Java", "Python"],
       emoji: "🧠",
       color: "bg-accent"
     },
     {
-      title: "Programming",
-      icon: Code2,
-      skills: ["Python", "R", "SQL", "JavaScript", "C++"],
-      emoji: "💻",
+      title: "Data & Tools",
+      icon: Database,
+      skills: ["Pandas", "NumPy", "Google Colab", "Jupyter", "VS Code", "GitHub"],
+      emoji: "📊",
       color: "bg-secondary"
     },
     {
-      title: "Data & Tools",
-      icon: Database,
-      skills: ["Pandas", "NumPy", "Matplotlib", "Jupyter", "Git", "Docker"],
-      emoji: "📊",
+      title: "Workspace & AI",
+      icon: Cpu,
+      skills: ["Google Workspace", "Microsoft 365", "ChatGPT", "Gemini", "Firebase Studio", "Google AI Studio"],
+      emoji: "🤖",
       color: "bg-primary"
     }
   ];

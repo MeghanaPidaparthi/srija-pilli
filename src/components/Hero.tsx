@@ -18,11 +18,10 @@ const Hero = () => {
           👋 Pre-Final Year | AI & ML
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-          I build <span className="inline-flex items-center gap-2"><Brain className="inline" />intelligent</span>
-          <br />
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground font-playfair">
+          Hi I'm{" "}
           <span className="relative inline-block">
-            AI solutions
+            Srija Pilli
             <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none">
               <path d="M2 10C50 5 100 2 150 5C200 8 250 3 298 8" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className="text-primary"/>
             </svg>
@@ -30,7 +29,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-          Exploring machine learning, deep learning, and cutting-edge AI to solve real-world problems
+          Building and experimenting through code and creativity
         </p>
         
         <Button 
@@ -38,7 +37,7 @@ const Hero = () => {
           onClick={scrollToProjects}
           className="animate-scale-in rounded-full bg-foreground text-background hover:bg-foreground/90 border-2 border-foreground font-semibold px-8"
         >
-          See Portfolio
+          See Resume
           <Sparkles className="ml-2 h-5 w-5" />
         </Button>
       </div>

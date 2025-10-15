@@ -4,28 +4,22 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "Sentiment Analysis Model",
-      description: "NLP model that classifies text sentiment using BERT transformers. Achieved 94% accuracy on test dataset.",
-      technologies: ["Python", "BERT", "Transformers"],
-      emoji: "😊"
+      title: "AI-Enhanced Learning Companion",
+      description: "Built during VIBE Coding Hackathon (GDG on Campus) — Finalist: Top 20 Teams. AI-powered study companion that adapts to different learners and supports their study process through personalized recommendations and progress tracking.",
+      technologies: ["Firebase Studio", "GitHub"],
+      emoji: "🤖"
     },
     {
-      title: "Image Classification CNN",
-      description: "Deep learning model for multi-class image classification using convolutional neural networks on CIFAR-10 dataset.",
-      technologies: ["TensorFlow", "CNN", "Keras"],
-      emoji: "🖼️"
+      title: "AttendML",
+      description: "A smart attendance system using face and fingerprint recognition ensures accurate, secure, and efficient tracking through real-time monitoring and cloud integration. It overcomes the drawbacks of traditional attendance methods with modern biometric technology.",
+      technologies: ["HTML", "CSS", "Python", "MySQL", "Flask"],
+      emoji: "👤"
     },
     {
-      title: "Predictive Analytics Dashboard",
-      description: "ML-powered dashboard for sales forecasting using time series analysis and regression models.",
-      technologies: ["Python", "Scikit-learn", "Streamlit"],
-      emoji: "📈"
-    },
-    {
-      title: "Recommendation System",
-      description: "Collaborative filtering-based recommendation engine for personalized content suggestions.",
-      technologies: ["Python", "Pandas", "Matrix Factorization"],
-      emoji: "🎯"
+      title: "AI-Based Application for Sustainable Farming",
+      description: "An innovative solution leveraging AI to support sustainable farming practices and optimize agricultural processes.",
+      technologies: ["Python", "React.js", "Node.js"],
+      emoji: "🌱"
     }
   ];
 

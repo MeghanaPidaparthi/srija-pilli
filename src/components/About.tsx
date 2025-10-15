@@ -15,13 +15,13 @@ const About = () => {
           
           <div className="bg-card rounded-3xl p-8 md:p-12 border-4 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 animate-slide-up">
             <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground">
-              Hi there! I'm a pre-final year Computer Science student specializing in <span className="font-bold relative inline-block">Artificial Intelligence & Machine Learning<span className="absolute bottom-0 left-0 w-full h-1 bg-secondary"></span></span>. I'm passionate about building intelligent systems that can learn, adapt, and solve complex problems.
+              Hi! I'm Srija Pilli, a pre-final year Computer Science student with a growing interest in <span className="font-bold relative inline-block">web development, digital creativity, and online branding<span className="absolute bottom-0 left-0 w-full h-1 bg-secondary"></span></span>.
             </p>
             <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground">
-              From neural networks to natural language processing, I dive deep into cutting-edge AI technologies. I believe in learning by doing – every model I train and every algorithm I implement brings me closer to understanding the future of technology.
+              I love learning how technology and design can come together to create meaningful digital experiences, whether it's building a simple website or curating engaging content for social media.
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-foreground">
-              Currently seeking <span className="font-bold text-primary">internship opportunities</span> where I can contribute to innovative AI projects and grow alongside experienced practitioners in the field.
+              I'm currently exploring opportunities that allow me to blend tech and creativity, collaborate with new people, and keep learning through real-world projects.
             </p>
           </div>
         </div>
