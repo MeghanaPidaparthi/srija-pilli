@@ -30,16 +30,14 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-background relative">
-      <div className="absolute top-10 right-10 text-5xl animate-bounce">💌</div>
-      
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in font-playfair">
               Let's start building your project
             </h2>
             <p className="text-lg text-muted-foreground">
-              Want to see how to transform your ideas into AI solutions? Send me a message 🚀
+              Want to see how to transform your ideas into AI solutions? Send me a message
             </p>
           </div>
           
@@ -95,7 +93,7 @@ const Contact = () => {
             </form>
             
             <div className="mt-12 pt-8 border-t-2 border-foreground">
-              <h3 className="text-xl font-bold mb-6 text-center">Connect with me 🤝</h3>
+              <h3 className="text-xl font-bold mb-6 text-center font-playfair">Connect with me</h3>
               <div className="flex justify-center gap-4">
                 <a 
                   href="https://linkedin.com/in/yourprofile" 

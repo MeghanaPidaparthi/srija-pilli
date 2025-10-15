@@ -25,18 +25,14 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 bg-background relative">
-      <div className="absolute top-10 right-10 text-5xl">🎯</div>
-      <div className="absolute bottom-10 left-10 text-4xl">💫</div>
-      
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center gap-3 mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in relative">
+          <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in relative font-playfair">
             My Portfolio
             <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 300 8" fill="none">
               <path d="M2 6C50 3 100 2 150 4C200 6 250 2 298 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary"/>
             </svg>
           </h2>
-          <span className="text-4xl">🚀</span>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -47,15 +43,12 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-secondary border-2 border-foreground flex items-center justify-center text-2xl">
-                  {project.emoji}
-                </div>
                 <Button variant="ghost" size="icon" className="rounded-full border-2 border-foreground hover:bg-foreground hover:text-background">
                   <ExternalLink className="h-4 w-4" />
                 </Button>
               </div>
               
-              <h3 className="text-2xl font-bold mb-3 text-foreground">
+              <h3 className="text-2xl font-bold mb-3 text-foreground font-playfair">
                 {project.title}
               </h3>
               <p className="text-foreground/80 mb-6 leading-relaxed">

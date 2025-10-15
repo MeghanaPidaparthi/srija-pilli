@@ -34,11 +34,9 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-20 bg-background relative">
-      <div className="absolute top-10 left-10 text-5xl animate-spin-slow">⚡</div>
-      
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center gap-3 mb-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in font-playfair">
             My Toolkit
           </h2>
         </div>
@@ -57,8 +55,7 @@ const Skills = () => {
                 <div className={`inline-flex p-3 rounded-2xl ${category.color} border-2 border-foreground`}>
                   <category.icon className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">{category.title}</h3>
-                <span className="text-3xl ml-auto">{category.emoji}</span>
+                <h3 className="text-2xl font-bold text-foreground font-playfair">{category.title}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (

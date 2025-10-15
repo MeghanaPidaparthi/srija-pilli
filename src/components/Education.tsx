@@ -3,11 +3,9 @@ import { GraduationCap } from "lucide-react";
 const Education = () => {
   return (
     <section id="education" className="py-20 bg-background relative">
-      <div className="absolute bottom-10 right-10 text-5xl">🎓</div>
-      
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center animate-fade-in font-playfair">
             Education
           </h2>
           <div className="space-y-8">
@@ -17,7 +15,7 @@ const Education = () => {
                   <GraduationCap className="h-8 w-8 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 text-foreground">
+                  <h3 className="text-2xl font-bold mb-2 text-foreground font-playfair">
                     Bachelor of Technology - BTech
                   </h3>
                   <p className="text-lg font-semibold text-foreground/80 mb-2">
@@ -47,7 +45,7 @@ const Education = () => {
                   <GraduationCap className="h-8 w-8 text-foreground" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 text-foreground">
+                  <h3 className="text-2xl font-bold mb-2 text-foreground font-playfair">
                     Intermediate
                   </h3>
                   <p className="text-lg font-semibold text-foreground/80 mb-2">

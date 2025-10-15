@@ -1,16 +1,12 @@
 const About = () => {
   return (
     <section id="about" className="py-20 bg-background relative">
-      <div className="absolute top-10 right-10 text-5xl">🎨</div>
-      <div className="absolute bottom-10 left-10 text-4xl">💡</div>
-      
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold text-center animate-fade-in font-playfair">
               About Me
             </h2>
-            <span className="text-4xl">☺️</span>
           </div>
           
           <div className="bg-card rounded-3xl p-8 md:p-12 border-4 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 animate-slide-up">

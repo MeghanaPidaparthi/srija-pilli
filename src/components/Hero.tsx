@@ -8,14 +8,9 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      <div className="absolute top-10 left-10 text-6xl animate-pulse">🌸</div>
-      <div className="absolute top-20 right-20 text-4xl animate-bounce">✨</div>
-      <div className="absolute bottom-32 left-20 text-5xl">🎯</div>
-      <div className="absolute bottom-20 right-32 text-4xl rotate-12">🚀</div>
-      
       <div className="container relative z-10 mx-auto px-4 py-20 text-center animate-fade-in">
         <div className="inline-block mb-6 px-4 py-2 border-2 border-foreground rounded-full text-sm font-medium">
-          👋 Pre-Final Year | AI & ML
+          Pre-Final Year | AI & ML
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground font-playfair">
