@@ -6,6 +6,11 @@ const Achievements = () => {
       icon: Trophy,
       title: "VIBE Coding Hackathon",
       description: "Finalist - Top 10 teams with 300+ participants",
+    },
+    {
+      icon: Award,
+      title: "Go4Youth Olympiad Topper",
+      description: "Malla Reddy University – National Merit, 2023",
     }
   ];
 
@@ -20,7 +25,7 @@ const Achievements = () => {
         </div>
         
         {/* Achievements Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {achievements.map((achievement, index) => (
             <div
               key={achievement.title}

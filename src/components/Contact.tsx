@@ -36,9 +36,6 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in font-playfair">
               Contact me
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Want to see how to transform your ideas into AI solutions? Send me a message
-            </p>
           </div>
           
           <div className="bg-card rounded-3xl p-8 md:p-12 border-4 border-foreground shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] animate-slide-up">
@@ -79,7 +76,6 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-2xl bg-background border-2 border-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none font-medium"
-                  placeholder="Tell me about your project..."
                   required
                 />
               </div>
@@ -88,7 +84,7 @@ const Contact = () => {
                 size="lg" 
                 className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90 border-2 border-foreground font-bold text-lg py-6"
               >
-                Send us message
+                Send
               </Button>
             </form>
             
