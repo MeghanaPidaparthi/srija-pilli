@@ -8,11 +8,8 @@ const Footer = () => {
       </div>
       <div className="container mx-auto px-4 pt-8">
         <div className="text-center">
-          <p className="text-lg font-bold text-foreground mb-2">
-            Portfolio 2025
-          </p>
           <p className="text-sm text-muted-foreground">
-            © 2025 Your Name. Built with AI & lots of ☕
+            © 2025 Srija Pilli.
           </p>
         </div>
       </div>

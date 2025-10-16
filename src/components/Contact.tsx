@@ -34,7 +34,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in font-playfair">
-              Let's start building your project
+              Contact me
             </h2>
             <p className="text-lg text-muted-foreground">
               Want to see how to transform your ideas into AI solutions? Send me a message
@@ -96,7 +96,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-6 text-center font-playfair">Connect with me</h3>
               <div className="flex justify-center gap-4">
                 <a 
-                  href="https://linkedin.com/in/yourprofile" 
+                  href="https://www.linkedin.com/in/srija-pilli/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="p-4 rounded-full border-2 border-foreground bg-background hover:bg-foreground hover:text-background transition-all"
@@ -104,7 +104,7 @@ const Contact = () => {
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="https://github.com/yourprofile" 
+                  href="https://github.com/PilliSrija" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="p-4 rounded-full border-2 border-foreground bg-background hover:bg-foreground hover:text-background transition-all"
@@ -112,7 +112,7 @@ const Contact = () => {
                   <Github className="h-6 w-6" />
                 </a>
                 <a 
-                  href="mailto:your.email@example.com" 
+                  href="mailto:srijapilli12@gmail.com" 
                   className="p-4 rounded-full border-2 border-foreground bg-background hover:bg-foreground hover:text-background transition-all"
                 >
                   <Mail className="h-6 w-6" />
