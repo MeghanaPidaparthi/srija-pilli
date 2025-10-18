@@ -41,7 +41,7 @@ const Header = () => {
             onClick={() => scrollToSection("hero")}
             className="text-xl md:text-2xl font-bold font-playfair hover:text-primary transition-colors"
           >
-            SP
+            Srija Pilli
           </button>
 
           {/* Desktop Navigation */}
