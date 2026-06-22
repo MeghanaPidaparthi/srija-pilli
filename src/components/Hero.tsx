@@ -28,7 +28,7 @@ const Hero = () => {
           asChild
           className="animate-scale-in rounded-full bg-foreground text-background hover:bg-foreground/90 border-2 border-foreground font-semibold px-8"
         >
-          <a href="https://drive.google.com/file/d/194-u_m5yf938E61vqkGUyQ4l5V6I_dIy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/16Du5lczLQN56z6bLzN8MEx4OIGNoINJx/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             See Resume
             <Sparkles className="ml-2 h-5 w-5" />
           </a>
